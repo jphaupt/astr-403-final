@@ -53,7 +53,7 @@ spectrum = (7.4311)*(1E12)*totCL[:,0]
 
 
 # Plot the data and camb models
-plt.title(r'$TT$')
+plt.title(r'Figure 4: $TT$ Plot with Varying $\Omega_c h^2$')
 plt.xlabel(r'$\ell$')
 plt.ylabel(r'$T_0^2 \ell (\ell + 1) C_\ell^{TT} / 2\pi$')
 plt.errorbar(x, y, yerr=y_err, fmt='.', color='k', label=r'High $\ell$ Planck Data')

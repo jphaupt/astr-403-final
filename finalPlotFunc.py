@@ -53,7 +53,7 @@ spectrum = (7.4311)*(1E12)*totCL[:,0]
 
 
 # Plot the data and camb model
-plt.title(r'$TT$')
+plt.title(r'Figure 1: Full $TT$ Plot')
 plt.xlabel(r'$\ell$')
 plt.ylabel(r'$T_0^2 \ell (\ell + 1) C_\ell^{TT} / 2\pi$')
 plt.errorbar(x, y, yerr=y_err, fmt='.', color='k', label=r'High $\ell$ Planck Data')
@@ -80,7 +80,7 @@ plt.errorbar(lx, ly, yerr=[y_down, y_up], fmt='o', label=r'Low $\ell$ Planck Dat
 lls = ls[2:len(x)+2]
 lspectrum = spectrum[2:len(x)+2]
 plt.plot(lls, lspectrum, label=r'Low $\ell$ fit')
-plt.title(r'$TT$ at low $\ell$')
+plt.title(r'Figure 2: $TT$ Plot at Low $\ell$')
 plt.xlabel(r'$10^\ell$')
 plt.ylabel(r'$T_0^2 \ell (\ell + 1) C_\ell^{TT} / 2\pi$')
 plt.xscale('log')
